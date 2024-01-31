@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    background: linear-gradient(to left, #414345, #232526);
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+.container {
+    padding: 0 32px;
+    margin: 30px;
+    display: flex;
+}
+.blog-sidebar {
+    min-width: 300px;
+    margin-right: 32px;
+}
+.blog-sidebar > div {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.blog-info { 
+    padding: 48px 29px 32px;
+}
+.blog-info img {
+    display: block;
+    width: 128px;
+    margin: 0 auto 16px;
+    border-radius: 100%;
+}
+.blog-info h1 {
+    font-family: 'Kreon', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.blog-info p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.blog-info .social-network {
+    text-align: center;
+}
+.blog-info .social-network li {
+    display: inline-block;
+}
+.blog-info .social-network li a {
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+.blog-info .social-network li a i {
+    display: block;
+    height: 100%;
+    line-height: 32px;
+    background: rgba(0,0,0,0.07);
+    color: #fff;
+    border-radius: 100%;
+    font-size: 16px;
+}
+.blog-info .social-network li a i:hover {
+    background: #fff;
+    color: #000;
+}
+
+.blog-nav ul {
+    display: flex;
+    margin-top: 1px;
+    margin-bottom: 32px;
+}
+.blog-nav ul li {
+    width: 100%;
+    padding-right: 1px;
+}
+.blog-nav ul li:last-child {
+    padding-right: 0;
+}
+.blog-nav ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 56px;
+    background: rgba(255,255,255,0.1);
+    color: inherit;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.blog-nav ul li a i {
+    line-height: 56px;
+    font-size: 20px;
+}
+
+.search {
+    height: 48px;
+    position: relative;
+    margin-bottom: 32px;
+}
+.search input {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255,255,255,0.6);
+    border: none;
+    padding: 0 16px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.search input:focus {
+    outline: none;
+}
+.search button {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: rgba(255,255,255,0.03);
+    color: #fff;
+}
+.search button i {
+    font-size: 16px;
+}
+
+.blog-box {
+    margin-bottom: 32px;
+}
+.blog-box h2 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #232526;
+    text-transform: uppercase;
+}
+.blog-box > div {
+    padding: 24px;
+}
+.blog-box .blog-pages ul li {
+    margin-bottom: 8px;
+}
+.blog-box .blog-pages ul li:last-child {
+    margin: 0;
+}
+.blog-box .blog-pages ul li a {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+}
+.blog-box .blog-pages ul li a:hover {
+    color: inherit;
+}
+.blog-box .blog-pages i {
+    color: #f6bb42;
+    margin-right: 5px;
+}
+
+.blog-box .blog-tags li {
+    display: inline-block;
+}
+.blog-box .blog-tags li a {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 3px;
+    background: rgba(255,255,255,0.09);
+    color: #fff;
+    font-size: 14px;
+}
+.blog-box .blog-tags li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.blog-footer {
+    color: rgba(255,255,255,0.25);
+    font-size: 12px;
+    margin-bottom: 32px;
+}
+.blog-footer a {
+    color: inherit;
+}
+
+.blog-post {
+    background-color: #fff;
+    color: #333333;
+    margin-bottom: 32px;
+    padding: 48px 52px;
+}
+.blog-post h3 {
+    font-family: 'Kreon', serif;
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.blog-post h3 a:hover {
+    color: #111;
+}
+.blog-post .post-info {
+    font-size: 12px;
+    color: #666666;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.blog-post .post-info span {
+    margin-right: 8px;
+}
+.blog-post .post-info span a {
+    color: inherit;
+}
+.blog-post .post-body {
+    line-height: 25.6px;
+}
+
+.pagination {
+    text-align: center;
+}
+.pagination li {
+    display: inline-block;
+}
+.pagination li a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 3px;
+    background: rgba(255,255,255,0.09);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.pagination li:first-child a,
+.pagination li.current-page a {
+    font-weight: 400;
+    color: #aaa;
+}
